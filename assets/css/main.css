@@ -37,7 +37,7 @@ main {
     text-align: center;
 }
 .center-content {
-    max-width: 1240px;
+    max-width: 680px;
     padding: 0 20px;
     margin: 0 auto;
     text-align: left;
@@ -73,8 +73,7 @@ p {
 .btn-conf { background-color: #5f7c8a; }
 .btn-videos { background-color: #f34235; }
 dl.ways-to-participate {
-    margin-top: 45px;
-    max-width: 640px;
+    margin: 45px 0 0 0;
 }
 dl.ways-to-participate dt {
     float: left;
