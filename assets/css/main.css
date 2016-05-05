@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-color: #eee;
+}
+body, input, select, textarea {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    font-family: Sanchez, serif;
+    color: #266fc3;
+}
+h1 { font-size: 26px; }
+h2 { font-size: 22px; }
+h3 { font-size: 20px; }
+h4 { font-size: 18px; }
+h5 { font-size: 16px; }
+h6 { font-size: 16px; }
+b, strong, legend, label, button, th, dt {
+    font-weight: 500;
+}
+main {
+    padding: 20px 0;
+    background-color: #fff;
+    min-height: calc(100vh - 195px);
+    text-align: center;
+}
+.center-it {
+    text-align: center;
+}
+.center-content {
+    max-width: 1240px;
+    padding: 0 20px;
+    margin: 0 auto;
+    text-align: left;
+}
+.table {
+    margin-top: 11px;
+}
+.table th {
+    background-color: #f9e034;
+    color: #343433;
+}
+p {
+    padding-bottom: 0.25em;
+}
+.btn {
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+}
+.btn:hover {
+    color: rgba(255,255,255,0.8);
+}
+.btn-participate {
+    width: 180px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.btn-slack { background-color: #e81d62; }
+.btn-mailing { background-color: #3e50b4; }
+.btn-orem-meetup { background-color: #fe5621; }
+.btn-slc-meetup { background-color: #4bae4f; }
+.btn-linkedin { background-color: #2095f2; }
+.btn-conf { background-color: #5f7c8a; }
+.btn-videos { background-color: #f34235; }
+dl.ways-to-participate {
+    margin-top: 45px;
+    max-width: 640px;
+}
+dl.ways-to-participate dt {
+    float: left;
+    clear: both;
+    width: 140px;
+}
+dl.ways-to-participate dd {
+    height: 90px;
+    float: right;
+    max-width: 425px;
+}
+.about {
+    padding-top: 60px;
+    max-width: 600px;
+}

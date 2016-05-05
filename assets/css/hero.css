@@ -1,0 +1,87 @@
+.hero {
+    min-height: 280px;
+    height: 75vh;
+    background: #6a8ab3 url(../img/laptop.jpg) no-repeat 50% 50% / cover;
+    position: relative;
+}
+.hero-box {
+    position: absolute;
+    width: 480px;
+    height: 240px;
+    padding: 20px;
+    background-color: rgba(22, 29, 14, 0.6);
+    right: 150px;
+    top: 50%;
+    margin-top: -120px;
+}
+.hero-box-inner {
+    height: 200px;
+    border: 1px solid #fff;
+    padding: 20px;
+}
+.hero-buttons,
+.hero-text {
+    width: 296px;
+    float: right;
+}
+.hero-text h2,
+.hero-subtext {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font: normal 18px Sanchez, serif;
+}
+.hero-text h2 {
+    font-weight: bold;
+    font-size: 22px;
+}
+.hero-subtext {
+    margin-top: 10px;
+}
+.hero-buttons {
+    margin-top: 15px;
+}
+.hero-buttons a {
+    margin-right: 6px;
+}
+.photo-credit {
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+}
+@media (max-width: 768px) {
+    .hero-box {
+        right: 20px;
+    }
+}
+@media (max-width: 520px) {
+    .hero-box {
+        right: 20px;
+        left: 20px;
+        width: auto;
+        height: auto;
+    }
+    .hero-box-img {
+        display: block;
+        text-align: center;
+    }
+    .hero-box-img img {
+        height: 60px;
+    }
+    .hero-buttons,
+    .hero-text {
+        width: auto;
+        float: none;
+    }
+    .hero-box-inner {
+        height: auto;
+    }
+    .hero-text h2 {
+        font-size: 15px;
+    }
+    .hero-subtext {
+        font-size: 14px;
+    }
+}
