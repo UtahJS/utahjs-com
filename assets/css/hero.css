@@ -1,7 +1,7 @@
 .hero {
     min-height: 280px;
     height: 75vh;
-    background: #6a8ab3 url(../img/laptop.jpg) no-repeat 50% 50% / cover;
+    background: #6a8ab3 url(../img/laptop2.jpg) no-repeat 50% 50% / cover;
     position: relative;
 }
 .hero-box {
