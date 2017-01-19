@@ -66,12 +66,16 @@ p {
     margin-bottom: 8px;
 }
 .btn-slack { background-color: #e81d62; }
-.btn-mailing { background-color: #3e50b4; }
+.btn-mailing { background-color: #5f7c8a; }
 .btn-orem-meetup { background-color: #fe5621; }
 .btn-slc-meetup { background-color: #4bae4f; }
-.btn-linkedin { background-color: #2095f2; }
-.btn-conf { background-color: #5f7c8a; }
-.btn-videos { background-color: #f34235; }
+.btn-ogden-meetup { background-color: #2095f2; }
+.btn-learners-meetup { background-color: #e81d62; }
+.btn-linkedin { background-color: #5f7c8a; }
+.btn-twitter { background-color: #fe5621; }
+.btn-conf { background-color: #4bae4f; }
+.btn-videos { background-color: #2095f2; }
+
 dl.ways-to-participate {
     margin: 45px 0 0 0;
 }
@@ -84,6 +88,24 @@ dl.ways-to-participate dd {
     height: 90px;
     float: right;
     max-width: 425px;
+}
+.sisters {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.sister {
+    flex: 100px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+}
+.sister-img,
+.sister-name {
+    display: block;
+    margin: 0 auto;
 }
 .about {
     padding-top: 60px;
