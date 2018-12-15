@@ -1,0 +1,36 @@
+$paddings: (
+  none: 0,
+  xs: 0.4rem,
+  sm: 0.7rem,
+  md: 1rem,
+  lg: 1.5rem,
+  xlg: 2rem,
+  xxlg: 3rem,
+);
+
+$margins: (
+  none: 0,
+  xs: 0.5rem,
+  sm: 0.7rem,
+  md: 1rem,
+  lg: 1.5rem,
+  xlg: 2rem,
+  xxlg: 3rem,
+  auto: auto,
+);
+
+$line-heights: (
+  sm: 1, 
+  md: 1.5, 
+  lg: 1.7, 
+  xlg: 2,
+);
+
+$rounded-buttons: (
+  sm: .2em, 
+  md: .7em, 
+  lg: 1.2em, 
+  xlg: 1.7em,
+);
+
+$nabar-height: rem-calc(45px);

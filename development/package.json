@@ -1,0 +1,28 @@
+{
+  "name": "utah-js",
+  "version": "1.0.0",
+  "description": "JavaScript Engineers of Utah - Let's learn together.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --watch-poll --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UtahJS/utahjs-com.git"
+  },
+  "homepage": "https://github.com/UtahJS/utahjs-com",
+  "devDependencies": {
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "cross-env": "^5.2.0",
+    "laravel-mix": "^2.1.14"
+  },
+  "dependencies": {
+    "foundation-sites": "^6.5.0-rc.1",
+    "mapbox-gl": "^0.52.0-beta.1",
+    "modularscale-sass": "^3.0.8",
+    "smoothscroll": "^0.4.0"
+  }
+}

@@ -1,0 +1,87 @@
+.p{
+  font-size: 1em;
+}
+
+a {
+  &,
+  &:hover,
+  &:visited,
+  &:focus {
+    color: inherit;
+  }
+}
+
+.no-wrap, .nowrap {
+  white-space: nowrap;
+}
+
+.em,
+.i {
+  font-style: italic;
+}
+
+.b,
+.strong,
+.bold {
+  font-weight: bold;
+}
+
+.underline,
+.u {
+  text-decoration: underline;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+@each $weight in (300, 400, 500, 700) {
+  .f-#{$weight} {
+    font-weight: $weight;
+  }
+}
+
+@each $height, $value in ("sm": 1, "md": 1.5, "lg": 1.7, "xlg": 2) {
+  .line-height-#{$height} {
+    line-height: $value;
+  }
+  .line-height-#{$height}-children {
+    & > * {
+      line-height: $value;
+    }
+  }
+}
+
+.line-through {
+  $c: &;
+  position: relative;
+  z-index: 1;
+  
+  &::after {
+    content: "";
+    display: block; 
+    position: absolute; 
+    bottom: 0.2em; 
+    width: 100%; 
+    right: 0; 
+    height: .3em; 
+    z-index: -1;
+  }
+
+  @each $name, $color in $foundation-palette {
+    &#{$c}--#{$name}::after {
+      background-color: $color;
+    }
+  }
+
+  @for $i from 10 to 90 {
+    &#{$c}--opacity-#{$i}p::after {
+      opacity: $i / 100;
+    }
+  }
+}
+
+.lineheight-img {
+  height: 1em;
+  vertical-align: -0.1em;
+}

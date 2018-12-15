@@ -1,0 +1,30 @@
+@each $element, $variable in (padding: $paddings, margin: $margins) {
+  @each $setting, $value in $variable {
+    .#{$element}-#{$setting} {
+      #{$element}: $value;
+    }
+    .#{$element}-top-#{$setting} {
+      #{$element}-top: $value;
+    }
+    .#{$element}-right-#{$setting} {
+      #{$element}-right: $value;
+    }
+    .#{$element}-bottom-#{$setting} {
+      #{$element}-bottom: $value;
+    }
+    .#{$element}-left-#{$setting} {
+      #{$element}-left: $value;
+    }
+    .#{$element}-vertical-#{$setting} {
+      #{$element}-top: $value;
+      #{$element}-bottom: $value;
+    }
+    .#{$element}-horizontal-#{$setting} {
+      #{$element}-left: $value;
+      #{$element}-right: $value;
+    }
+    .#{$element}-reset {
+      #{$element}: 0 !important;
+    }
+  }
+}

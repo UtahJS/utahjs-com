@@ -1,0 +1,27 @@
+#top-navbar{
+    height: $nabar-height; 
+    z-index: 50;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; 
+
+    .s-body > a {
+        & > img {
+            height: rem-calc(30px); 
+            position: relative; 
+            top: rem-calc(7px);
+        }
+        & > .s-h {
+            display: inline-block;
+            position: relative; 
+            top: rem-calc(9px); 
+            letter-spacing: -.03em;
+        }
+    }
+}
+
+.top-navbar-dummy-plug {
+    height: $nabar-height;
+}

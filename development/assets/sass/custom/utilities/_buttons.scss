@@ -1,0 +1,9 @@
+.button {
+    $c: &;
+
+    @each $level, $value in $rounded-buttons {
+        &#{$c}--rounded-#{$level}{
+            @include border-radius($value);
+        }
+    }
+}

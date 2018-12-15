@@ -1,0 +1,79 @@
+.d-block {
+  display: block;
+}
+.d-inline-block {
+  display: inline-block;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.o-hidden{
+  overflow: hidden;
+}
+
+.bg-img {
+  $c: &;
+  background-repeat: no-repeat;
+
+  &#{$c}--cover {
+    @include background-size(cover);
+  }
+  &#{$c}--contain {
+    @include background-size(contain);
+  }
+  &#{$c}--center {
+    background-position: center center;
+  }
+  &#{$c}--fixed {
+    background-attachment: fixed;
+  }
+  &#{$c}--top {
+    background-position-y: top;
+  }
+  &#{$c}--right {
+    background-position-x: right;
+  }
+  &#{$c}--bottom {
+    background-position-y: bottom;
+  }
+  &#{$c}--left {
+    background-position-x: left;
+  }
+}
+
+.fill-parent {
+  @include fill-parent;
+}
+
+@for $width from 1 through 100{
+  @if $width % 5 == 0 {
+    .w-#{$width} {
+      width: #{$width}#{"%"};
+    }
+  }
+}
+
+@for $i from 10 to 90 {
+  .opacity-#{$i}p, .o-#{$i}p {
+    opacity: $i / 100;
+  }
+}
+
+.h-100{
+  height: 100%;
+}
+
+.shadowed{
+    @include shadowed;
+}
+
+.lineheight-img{
+  height: 1em;
+  vertical-align: -0.1em;
+}

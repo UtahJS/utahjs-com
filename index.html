@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head> 
     <meta charset="utf-8">
     <title>UtahJS - JavaScript Engineers of Utah</title>
     <meta name="viewport" content="width=device-width">
     <meta property="og:title" content="UtahJS - JavaScript Software Engineers of Utah">
-    <meta property="og:image" content="assets/img/header-logo.png">
+    <meta property="og:image" content="/assets/img/header-logo.png">
     <meta property="og:image:width" content="140">
     <meta property="og:image:height" content="180">
     <meta property="og:site_name" content="UtahJS">
@@ -26,165 +26,259 @@
     <link rel="manifest" href="/assets/favicons/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#f9e034">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sanchez|Fira+Sans:300,300italic,500,500italic">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/main.css?2">
-    <link rel="stylesheet" href="assets/css/hero.css?2">
-</head>
-<body>
+	<meta name="theme-color" content="#2b2b2b">
+	
+    <link rel="stylesheet" href="/assets/compiled/style.css?v=3">
+	<script src="/assets/compiled/app.js?v=3" async></script>
+	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css' rel='stylesheet' />
+	
+  </head>
+  <body>
+			
+		<div id="page" class="bg-utjs-white">
 
-<div class="hero">
-    <div class="hero-box">
-        <div class="hero-box-inner">
-			<span class="hero-box-img">
-				<img src="assets/img/logo.png" height="100" alt="Logo">
-			</span>
-            <div class="hero-text">
-                <h2>UtahJS</h2>
-                <div class="hero-subtext hero-date">JavaScript Engineers of Utah</div>
-                <div class="hero-subtext hero-venue">Let's learn together.</div>
-            </div>
-            <div class="hero-buttons">
-                <a href="https://conf.utahjs.com" class="btn btn-twitter">Conference</a>
-                <!--<a href="https://slack.utahjs.com" class="btn btn-slack">Slack</a>-->
-                <a href="#Meetups" class="btn btn-videos">Meetups</a>
-            </div>
-        </div>
-    </div>
-</div>
+			<!-- BEGIN navbar -->
+			<div class="top-navbar-dummy-plug"></div>
+			<nav id="top-navbar" class="shadowed bg-utjs-black">
+				<div class="row">
+					<div class="column small-12 s-body">
+						<a href="/">
+							<img alt="" src="assets/img/logo.svg"/>
+							<h1 class="col-white f-500 ff-roboto margin-left-xs p s-h">
+								JavaScript Engineers of Utah
+							</h1>
+						</a>
+					</div>
+				</div>
+			</nav>
+			<!-- END navbar -->
 
+			<!-- BEGIN main-hero -->
+			<section id="main-hero" class="s-hero p-relative shadowed o-hidden">
 
-<main>
-    <div class="center-content">
-        <h1 id="GetInvolved">Get involved in JavaScript in Utah</h1>
+				<figure class="s-hero__bg-image" style="background-image: url(/assets/img/hero.jpg);"></figure>
+				<figure class="s-hero__bg-image o-40p" style="background-image: url(/assets/img/hero-pattern.png);"></figure>
+				<figure class="s-hero__bg-image bg-utjs-yellow o-80p"></figure>
 
-        <dl class="ways-to-participate clearfix">
+				<div class="row align-center padding-top-xxlg padding-top-sm p-relative">
+					<div class="column small-12 medium-8 large-6 text-center">
+						<h2>
+							<span class="h1 f-700 ff-roboto">JavaScript + Utah?</span><br/>
+							<span class="col-white">
+								Let's learn <span class="line-through line-through--utjs-red">together</span>!
+							</span>
+						</h2>
+					</div>
+				</div>
+				
+			</section>
+			<!-- END main-hero -->
 
-            <dt><a href="https://slack.utahjs.com" class="btn btn-participate btn-slack">Slack</a></dt>
-            <dd>
-                Join our Slack discussions <a href="https://slack.utahjs.com">here</a>.
-                Ask the community JavaScript questions and make announcements.
-            </dd>
+			<!-- BEGIN triptych -->
+			<section id="main-triptych" class="row align-center p-relative">
+				<div class="column small-12 large-8 xlarge-7">
+					<div class="s-triptych text-center">   
+						<a class="s-triptych__section padding-sm padding-bottom-md shadowed" href="https://slack.utahjs.com/" target="_blank">
+							<div class="s-triptych__inner">
+								<img src="/assets/img/icons/triptych/slack.png" alt="Slack" class="d-block margin-auto padding-md s-triptych-icon"/>
+								<h3 class="p margin-none ff-roboto">Join us on Slack!</h3>
+							</div>
+						</a>
+						<a class="s-triptych__section padding-sm padding-bottom-md shadowed" href="https://conf.utahjs.com/" target="_blank">
+							<div class="s-triptych__inner">
+									<img src="/assets/img/logo.svg" alt="Coonference" class="d-block margin-auto padding-md s-triptych-icon"/>
+									<h3 class="p margin-none f-300 ff-roboto col-white">Annual Conference</h3>
+							</div>
+						</a>
+						<a class="s-triptych__section padding-sm padding-bottom-md shadowed" href="#meetups">
+							<div class="s-triptych__inner">
+								<img src="/assets/img/icons/triptych/meetups.png" alt="Meetups" class="d-block margin-auto padding-md s-triptych-icon"/>
+								<h3 class="p margin-none ff-roboto col-white">See you on Meetups!</h3>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+			<!-- END triptych -->
 
-            <dt><a href="https://groups.google.com/forum/#!forum/utahjs" class="btn btn-participate btn-mailing">Join Mailing List</a></dt>
-            <dd>
-                We use Google Groups for our mailing list.<br>
-                Send an email to <a href="mailto:utahjs@googlegroups.com">utahjs@googlegroups.com</a>
-                to join the discussion via email.
-            </dd>
+			<!-- BEGIN main body section -->
+			<main class="padding-top-xxlg">
 
-            <dt><a href="http://www.meetup.com/UtahJS/" class="btn btn-participate btn-orem-meetup">Lehi Meetup</a></dt>
-            <dd>
-                Join us the first Thursday of every month at Jane in Lehi.
-                <a href="http://www.meetup.com/UtahJS/">Schedule on Meetup.com</a>
-            </dd>
+				<div class="row text-justify padding-vertical-md">
+					<section class="column small-12 large-6">
+						<h4 class="h2 large-text-center">Who are we?</h4>
+						<hr/>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed felis sit amet eros mollis convallis. Suspendisse potenti. In eu venenatis purus, id ultrices nisl. Sed malesuada quam a diam efficitur cursus eget in arcu. Vestibulum ante ipsum primis.</p>
+					</section>
+					<div class="column small-12 hide-for-large padding-top-lg"></div>
+					<section class="column small-12 large-6">
+						<h4 class="h2 large-text-center">What do we do?</h4>
+						<hr/>
+						<p>Mauris finibus ante ut posuere lobortis. Nunc rhoncus quis urna sagittis gravida. Vestibulum lorem metus, facilisis nec arcu vitae, convallis dignissim diam. Proin nec mauris nec augue accumsan venenatis quis vitae quam. Phasellus sollicitudin tincidunt nisi viverra suscipit.</p>
+					</section>
+				</div>
 
-            <dt><a href="http://www.meetup.com/UtahJS/" class="btn btn-participate btn-slc-meetup">SLC Meetup</a></dt>
-            <dd>
-                Join us the third Tuesday of every month at O.C. Tanner in Salt Lake City.
-                <a href="http://www.meetup.com/UtahJS/">Schedule on Meetup.com</a>
-            </dd>
+				<section id="meetups" class="padding-bottom-xxlg">
+					<div class="padding-top-xxlg show-for-large"></div>
+					<div class="row padding-bottom-sm">
+						<div class="column small-12">
+							<h4 class="h2 large-text-center">Our meetups</h4>
+							<hr class="hide-for-large margin-bottom-none"/>
+						</div>
+					</div>
 
-            <dt><a href="http://www.meetup.com/UtahJS/" class="btn btn-participate btn-ogden-meetup">Ogden Meetup</a></dt>
-            <dd>
-                Join us the first Thursday of every month at Startup Ogden.
-                <a href="http://www.meetup.com/UtahJS/">Schedule on Meetup.com</a>
-            </dd>
+					<!-- BEGIN meetups-map -->
+					<div class="row expanded collapse align-stretch shadowed o-hidden show-for-large">
+						<div class="column small-12 p-relative">
+							<div class="mapbox__container" id="meetups-map">
+								<div class="mapbox__canvas">
+									<div></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- END meetups-map -->
+					
+					<!-- BEGIN meetuups badges -->
+					<div class="row small-up-2 medium-up-3 large-up-6 align-center text-center">
+						<div class="column s-meetup-badge">
+							<a href="https://www.meetup.com/AngularJS-Utah/" target="_blank">
+								<img src="/assets/img/sisters/angularjs.png" alt="" class="s-meetup-badge__logo"/>
+								<h5 class="s-meetup-badge__header p">Angular</h5>
+							</a>
+						</div>
+						<div class="column s-meetup-badge">
+							<a href="https://www.meetup.com/utah-elm/" target="_blank">
+								<img src="/assets/img/sisters/elm.png" alt="" class="s-meetup-badge__logo"/>
+								<h5 class="s-meetup-badge__header p">Elm</h5>
+							</a>
+						</div>
+						<div class="column s-meetup-badge">
+							<a href="https://www.meetup.com/EmberJS-SLC/" target="_blank">
+								<img src="/assets/img/sisters/emberjs.png" alt="" class="s-meetup-badge__logo"/>
+								<h5 class="s-meetup-badge__header p">Ember.JS</h5>
+							</a>
+						</div>
+						<div class="column s-meetup-badge">
+							<a href="https://www.meetup.com/Ionic-Utah/" target="_blank">
+								<img src="/assets/img/sisters/ionic.png" alt="" class="s-meetup-badge__logo"/>
+								<h5 class="s-meetup-badge__header p">Ionic</h5>
+							</a>
+						</div>
+						<div class="column s-meetup-badge">
+							<a href="https://www.meetup.com/JavaScript-Lecture-Series/" target="_blank">
+								<img src="/assets/img/sisters/lectureseries.png" alt="" class="s-meetup-badge__logo"/>
+								<h5 class="s-meetup-badge__header p">Lecture Series</h5>
+							</a>
+						</div>
+						<div class="column s-meetup-badge">
+							<a href="https://www.meetup.com/lunch-js/" target="_blank">
+								<img src="/assets/img/sisters/lunchjs.png" alt="" class="s-meetup-badge__logo"/>
+								<h5 class="s-meetup-badge__header p">LunchJS</h5>
+							</a>
+						</div>
+						<div class="column s-meetup-badge">
+							<a href="https://www.meetup.com/utahnodejs/" target="_blank">
+								<img src="/assets/img/sisters/nodejs.png" alt="" class="s-meetup-badge__logo"/>
+								<h5 class="s-meetup-badge__header p">Node.js SLC</h5>
+							</a>
+						</div>
+						<div class="column s-meetup-badge">
+							<a href="https://www.meetup.com/utahnodejs/" target="_blank">
+								<img src="/assets/img/sisters/nodejs.png" alt="" class="s-meetup-badge__logo"/>
+								<h5 class="s-meetup-badge__header p">Node.js Provo</h5>
+							</a>
+						</div>
+						<div class="column s-meetup-badge">
+							<a href="https://www.meetup.com/ReactJS-Utah/" target="_blank">
+								<img src="/assets/img/sisters/reactjs.png" alt="" class="s-meetup-badge__logo"/>
+								<h5 class="s-meetup-badge__header p">ReactJS</h5>
+							</a>
+						</div>
+						<div class="column s-meetup-badge">
+							<a href="https://www.meetup.com/UReactJS/" target="_blank">
+								<img src="/assets/img/sisters/ureactjs.png" alt="" class="s-meetup-badge__logo"/>
+								<h5 class="s-meetup-badge__header p">UReactJS</h5>
+							</a>
+						</div>
+						<div class="column s-meetup-badge">
+							<a href="https://www.meetup.com/UtahJS/" target="_blank">
+								<img src="/assets/img/sisters/utahjs.png" alt="" class="s-meetup-badge__logo"/>
+								<h5 class="s-meetup-badge__header p">UtahJS</h5>
+							</a>
+						</div>
+						<div class="column s-meetup-badge">
+							<a href="https://www.meetup.com/utah-vue/" target="_blank">
+								<img src="/assets/img/sisters/vuejs.png" alt="" class="s-meetup-badge__logo"/>
+								<h5 class="s-meetup-badge__header p">Vue.js</h5>
+							</a>
+						</div>
+					</div>
+					<!-- END meetuups badges -->
+				</section>
 
-            <dt><a href="http://www.meetup.com/UtahJS/" class="btn btn-participate btn-learners-meetup">Learners Meetup</a></dt>
-            <dd>
-                Presentations immediately proceeding the SLC meetup, as well as monthly study groups.
-                <a href="http://www.meetup.com/UtahJS/">Schedule on Meetup.com</a>
-            </dd>
+			</main>
+			<!-- END main body section -->
 
-            <dt><a href="https://www.linkedin.com/groups/6635311" class="btn btn-participate btn-linkedin">LinkedIn</a></dt>
-            <dd>
-                Get to know us, connect with us and network with us on our
-                <a href="https://www.linkedin.com/groups/6635311">LinkedIn Group</a>.
-            </dd>
+			<!-- BEGIN footer -->
+			<footer id="footer" class="medium-text-justify">
+				<div class="row">
 
-            <dt><a href="https://twitter.com/utjs" class="btn btn-participate btn-twitter">Twitter</a></dt>
-            <dd>
-                Get updates, join the conversation and follow us on
-                <a href="https://twitter.com/utjs">Twitter</a>.
-            </dd>
+					<div class="column small-12 large-6">
+						<div class="row">
+							<div class="column small-6 medium-6">
+								<div class="footer__list">
+									<h6 class="h5 s-h">
+										<span class="line-through line-through--utjs-red line-through--opacity-80p">Meetups</span>
+									</h6>
+									<ul class="incognito-list">
+										<li><a href="https://www.meetup.com/UtahJS/" target="_blank">Lehi Meetup</a></li>
+										<li><a href="https://www.meetup.com/UtahJS/" target="_blank">SLC Meetup</a></li>
+										<li><a href="https://www.meetup.com/UtahJS/" target="_blank">Ogden Meetup</a></li>
+										<li><a href="https://www.meetup.com/UtahJS/" target="_blank">Learners Meetup</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="column small-6 medium-6">
+								<div class="footer__list">
+									<h6 class="h5 s-h">
+										<span class="line-through line-through--utjs-blue line-through--opacity-50p">Get involved!</span>
+									</h6>
+									<ul class="incognito-list">
+										<li><a href="https://slack.utahjs.com/" target="_blank">Say &quot;hi&quot; on Slack</a></li>
+										<li><a href="https://groups.google.com/forum/#!forum/utahjs" target="_blank">Join mailing group</a></li>
+										<li><a href="https://www.linkedin.com/groups/6635311" target="_blank">Check out LinkedIn</a></li>
+										<li><a href="" target="_blank"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
 
-            <dt><a href="https://conf.utahjs.com" class="btn btn-participate btn-conf">Conferences</a></dt>
-            <dd>
-                Our 7th annual conference is Friday, September 14, 2018. Get the details at
-                <a href="https://conf.utahjs.com">conf.utahjs.com</a>.
-            </dd>
+					<div class="column small-12 large-6">
+						<div class="padding-top-xlg hide-for-large"></div>
+						<div class="footer__list">
+							<h6 class="h5 s-h">
+								<span class="line-through line-through--success line-through--opacity-50p">Socials</span>
+							</h6>
+							<ul class="inline-list social-list">
+								<li><a href="https://slack.utahjs.com/" target="_blank"><img src="/assets/img/icons/socials/slack.png" alt=""/></a></li>
+								<li><a href="https://twitter.com/utjs" target="_blank"><img src="/assets/img/icons/socials/twitter.png" alt=""/></a></li>
+								<li><a href="https://www.youtube.com/channel/UCimy8Fjcw_8XwEDEsI0cKeA" target="_blank"><img src="/assets/img/icons/socials/youtube.png" alt=""/></a></li>
+								<li><a href="https://www.linkedin.com/groups/6635311" target="_blank"><img src="/assets/img/icons/socials/linkedin.png" alt=""/></a></li>
+								<li><a href="mailto:ken@utahjs.com"><img src="/assets/img/icons/socials/mail.png" alt=""/></a></li>
+							</ul>
+							<div class="padding-top-md">
+								<p><small>UtahJS is a 501(c)(3) organization and contributions are tax deductible. We are run by a passionate group of volunteers. To help out or make a donation or sponsor this site or an event please contact Ken Snyder at <a href="mailto:ken@utahjs.com" class="u">ken@utahjs.com</a>.</small></p>
+							</div>
+						</div>
+					</div>
 
-            <dt><a href="https://www.youtube.com/channel/UCimy8Fjcw_8XwEDEsI0cKeA" class="btn btn-participate btn-videos">Videos</a></dt>
-            <dd>
-                Watch meetup presentations and conference talks on
-                <a href="https://www.youtube.com/channel/UCimy8Fjcw_8XwEDEsI0cKeA">YouTube</a>.
-            </dd>
-        </dl>
+				</div>
+			</footer>
+			<!-- END footer -->
 
-        <h2 id="Meetups">JavaScript Meetups in Utah</h2>
-        <div class="sisters">
-            <a href="https://www.meetup.com/AngularJS-Utah/" target="_blank" class="sister">
-                <img class="sister-img" src="assets/img/sisters/angularjs.jpg" width="90" height="90" alt="" />
-                <span class="sister-name">Angular</span>
-            </a>
-            <a href="https://www.meetup.com/utah-elm/" target="_blank" class="sister">
-                <img class="sister-img" src="assets/img/sisters/elm.png" width="67" height="90" alt="" />
-                <span class="sister-name">Elm</span>
-            </a>
-            <a href="https://www.meetup.com/EmberJS-SLC/" target="_blank" class="sister">
-                <img class="sister-img" src="assets/img/sisters/emberjs.jpg" width="60" height="90" alt="" />
-                <span class="sister-name">Ember.JS</span>
-            </a>
-            <a href="https://www.meetup.com/Ionic-Utah/photos/" target="_blank" class="sister">
-                <img class="sister-img" src="assets/img/sisters/ionic.jpg" width="90" height="90" alt="" />
-                <span class="sister-name">Ionic</span>
-            </a>
-        </div>
-        <div class="sisters">
-            <a href="https://www.meetup.com/lunch-js/" target="_blank" class="sister">
-                <img class="sister-img" src="assets/img/sisters/lunchjs.jpg" width="90" height="90" alt="" />
-                <span class="sister-name">Lunch.JS</span>
-            </a>
-            <a href="https://www.meetup.com/JavaScript-Lecture-Series/" target="_blank" class="sister">
-                <img class="sister-img" src="assets/img/sisters/lectureseries.png" width="90" height="90" alt="" />
-                <span class="sister-name">Lecture Series</span>
-            </a>
-            <a href="https://www.meetup.com/utahnodejs/" target="_blank" class="sister">
-                <img class="sister-img" src="assets/img/sisters/nodejs.jpg" width="70" height="90" alt="" />
-                <span class="sister-name">Node.js SLC</span>
-            </a>
-            <a href="https://www.meetup.com/utahnodejs/" target="_blank" class="sister">
-                <img class="sister-img" src="assets/img/sisters/nodejs.jpg" width="70" height="90" alt="" />
-                <span class="sister-name">Node.js Provo</span>
-            </a>
-        </div>
-        <div class="sisters">
-            <a href="https://www.meetup.com/ReactJS-Utah/" target="_blank" class="sister">
-                <img class="sister-img" src="assets/img/sisters/reactjs.jpg" width="90" height="90" alt="" />
-                <span class="sister-name">ReactJS</span>
-            </a>
-            <a href="https://www.meetup.com/UReactJS/" target="_blank" class="sister">
-                <img class="sister-img" src="assets/img/sisters/ureactjs.jpg" width="75" height="90" alt="" />
-                <span class="sister-name">UReactJS</span>
-            </a>
-            <a href="http://www.meetup.com/UtahJS/" target="_blank" class="sister">
-                <img class="sister-img" src="assets/img/logo.png" width="70" height="90" alt="" />
-                <span class="sister-name">UtahJS</span>
-            </a>
-            <a href="https://www.meetup.com/utah-vue/" target="_blank" class="sister">
-                <img class="sister-img" src="assets/img/sisters/vuejs.jpg" width="90" height="90" alt="" />
-                <span class="sister-name">Vue.js</span>
-            </a>
-        </div>
-
-        <div class="about">
-            UtahJS is a 501(c)(3) organization and contributions are tax deductible.
-            We are run by a passionate group of volunteers.
-            To help out or make a donation or sponsor this site or an event please contact
-            Ken Snyder at <a href="mailto:ken@utahjs.com">ken@utahjs.com</a>.
-        </div>
-
-    </div>
-</main>
+		</div>
+		
+  </body>
+</html>

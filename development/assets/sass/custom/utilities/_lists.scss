@@ -1,0 +1,29 @@
+.incognito-list, .inline-list {
+
+    &, ul, li {
+        margin: 0;
+        padding: 0;
+        display: block;
+        list-style-type: none;
+    }
+    
+    ul {
+        margin-left: 1em;
+    }
+
+}
+
+.inline-list {
+    &, ul {
+        margin: 0;
+    }
+    &::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    li {
+        margin-right: 1em;
+        float: left;
+    }
+}

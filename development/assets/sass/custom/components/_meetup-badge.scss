@@ -1,0 +1,32 @@
+.s-meetup-badge {
+    $c: &;
+
+    #{$c}__logo {
+        padding: rem-calc(25px);
+        padding-bottom: rem-calc(10px);
+        max-height: rem-calc(100px);
+        margin: auto;
+        display: block;
+        transition-duration: .3s;
+    } 
+
+    #{$c}__header {
+        @include ff-roboto();
+        font-weight: 300;
+    }
+
+    & {
+        margin-top: rem-calc(20px);
+        position: relative;
+
+        & > a {
+            display: block;
+
+            &:hover {
+                #{$c}__logo {
+                    transform: translateY(-8%);
+                }
+            }
+        }
+    }
+}

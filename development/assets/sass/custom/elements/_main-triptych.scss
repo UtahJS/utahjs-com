@@ -1,0 +1,22 @@
+#main-triptych{
+    top: -4rem; 
+    margin-bottom: -4rem;
+
+    .s-triptych {
+        .s-triptych__section{
+            background: $white;
+
+            &:nth-child(2){
+                background: map-get($foundation-palette, utjs-black);
+            }
+
+            &:nth-child(3){
+                background: #e71e27;
+            }
+
+            .s-triptych-icon{
+                max-height: 80px;
+            }
+        }
+    }
+}
