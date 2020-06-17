@@ -63,8 +63,8 @@ section {
 p {
     padding-bottom: 0.25em;
 }
-.btn {
-    font-weight: 300;
+.btn, .btn:visited {
+    font-weight: 400;
     text-transform: uppercase;
     color: #fff;
 }
