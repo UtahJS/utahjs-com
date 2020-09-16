@@ -77,16 +77,20 @@ p {
     text-align: center;
     margin-bottom: 8px;
 }
-.btn-slack { background-color: #e81d62; }
-.btn-orem-meetup { background-color: #fe5621; }
-.btn-slc-meetup { background-color: #4bae4f; }
-.btn-ogden-meetup { background-color: #2095f2; }
-.btn-learners-meetup { background-color: #e81d62; }
-.btn-linkedin { background-color: #5f7c8a; }
-.btn-twitter { background-color: #fe5621; }
-.btn-conf { background-color: #4bae4f; }
-.btn-videos { background-color: #2095f2; }
+.hero-buttons .btn:nth-child(1) { background-color: #F6E05A; color: #333; }
+.hero-buttons .btn:nth-child(2) { background-color: #0fa513; }
 
+.ways-to-participate dt:nth-child(14n + 1) .btn { background-color: #F6E05A; color: #333; }
+.ways-to-participate dt:nth-child(14n + 3) .btn { background-color: #0fa513; }
+.ways-to-participate dt:nth-child(14n + 5) .btn { background-color: #2095f2; }
+.ways-to-participate dt:nth-child(14n + 7) .btn { background-color: #6516d9; }
+.ways-to-participate dt:nth-child(14n + 9) .btn { background-color: #b113ba; }
+.ways-to-participate dt:nth-child(14n + 11) .btn { background-color: #e81d62; }
+.ways-to-participate dt:nth-child(14n + 13) .btn { background-color: #fe5621; }
+
+.ways-to-participate {
+    padding-bottom: 0;
+}
 dl.ways-to-participate dt {
     float: left;
     clear: both;
